@@ -3,6 +3,7 @@
 
 class Database extends PDO {
 
+    //کلاس دیتابیس برای ساخت ارتباط اولیه سایت
     public function __construct() {
 
         try {

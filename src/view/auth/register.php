@@ -1,5 +1,5 @@
 <?php 
-
+   
     $formClass = isset($this->error) ? 'error' : '';
 
     $firstnameData = isset($this->formData['firstname']) ? $this->formData['firstname'] : '';

@@ -1,6 +1,7 @@
 <?php
     class Navbar_Model extends Model {
 
+        // فراخانی دسته بندی های ثبت شده در دیتابیس
         public function getAllCategories() {
             $sql = "SELECT * FROM category WHERE 1";
             $obj = $this->db->prepare($sql);

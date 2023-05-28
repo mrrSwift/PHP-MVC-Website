@@ -1,6 +1,7 @@
 <?php
 
 class Message {
+    // 
 
     public static function add($text, $class = 'success', $duration = 0) {
         $allMessages = self::getAll();

@@ -22,6 +22,7 @@
     
             return false;
         }
+        // تابع سرچ دسته بندی ها
 
         // public function searchFunction($post_id = null, $search = null) {
         //     $sql1 = 'SELECT user.firstname, user.lastname, file.image, file.thumb, category.category_name, posts.*
@@ -151,6 +152,8 @@
         # Comment feature SQL 
         # **********************
 
+
+        // تابع بازکشی کامنت ها از دیتابیس
         public function getAllCommentsById($id) {
             $sql = 'SELECT
             USER.firstname,
@@ -174,7 +177,8 @@
     
             return false;
         }
-
+ 
+        // تابع ثبت کامنت
         public function userComment($user_comment, $postId) {
             $sql = 'INSERT INTO comments(comment_content, user_id, post_id) VALUES (:comment_content, :user_id, :post_id)';
             $obj = $this->db->prepare($sql);

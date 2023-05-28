@@ -1,6 +1,7 @@
 <?php
 
 class Session {
+    //بررسی سطح دسترسی کاربر
 
     static public function start() {
         session_start();

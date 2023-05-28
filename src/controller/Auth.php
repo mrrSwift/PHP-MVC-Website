@@ -92,7 +92,7 @@ class Auth extends Controller {
                 
                 // Resets login attempts to 0 if login successfull
                 $resetAttempts = $this->model->resetLoginAttempts($user['email']);
-                header('Location: ' . URL . 'home');
+                header('Location: ' . URL . 'dashboard');
                 return;
             }
 

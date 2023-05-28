@@ -3,11 +3,13 @@
 class Application {
     
     function __construct() {
-
+// کلاس سازنده برای بررسی یو ار ال و برگشت دادن یوزر به صفحه اصلی
         $url = isset($_GET['url']) ? $_GET['url'] : null;
+        if($url !== null){
         $url = rtrim( $url, '/');
         $url = explode('/', $url);
 
+               }       
         if (empty($url[0])) $url[0] = 'home';
         $url[0] = ucfirst($url[0]);
 
@@ -25,8 +27,8 @@ class Application {
         $navbarController->initCategories();
 
         //------------------------------------------------------
-        // Autoload controller
-
+        // ابلود کردن توابع فایل های کنترلر و درصورت پیدا نکردن برگشت دادن ارور 404
+        
         $file = 'controller/' . $url[0] . '.php';
         if (file_exists($file)) {
             require $file;

@@ -2,11 +2,11 @@
 
 
 //---------------------------------------------------------
-
-define('DEBUG_MODE', true);
+//فعال کردن کتابخانه دیباگ
+define('DEBUG_MODE', false);
 
 //---------------------------------------------------------
-
+// تنظیمات دیتابیس
 define('DB_TYPE', 'mysql');
 define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
@@ -16,11 +16,11 @@ define('DB_USER', 'root');
 define('DB_PASS', '');
 
 //---------------------------------------------------------
-
+//مسیر سایت
 define('URL', '/PHP-MVC-Blog/src/');
 
 //---------------------------------------------------------
-
+// تعداد تلاش برای ورود
 define('MAXIMUM_LOGINS', 3);
 
 //---------------------------------------------------------
@@ -30,16 +30,16 @@ define('ACTIVE_PAGE', 0);
 define('CARDS_PER_PAGE', 6);
 
 //---------------------------------------------------------
+//اسم سایت
 
-
-define('SITENAME', 'Swift W3schols MVC');
+define('SITENAME', 'Swift MVC');
 
 //---------------------------------------------------------
 
 define('DEFAULT_IMG', URL . 'public/img/default.jpg');
 
 //---------------------------------------------------------
-
+//تنظیمات ذخیر سازی عکس
 define('IMAGE_UPLOADS_PATH', 'uploads/images');
 define('IMAGE_DEFAULT_EXT', '.jpg');
 define('IMAGE_THUMB_EXT', '-thumb');

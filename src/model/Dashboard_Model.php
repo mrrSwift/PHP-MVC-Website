@@ -81,6 +81,7 @@
             // Return result
             return $result;
         }
+        // تابع قدیمی بروزرسانی اطلاعات کاربر
 
         // public function updateUser($user) {
         //     $password = $user['password'];
@@ -327,6 +328,8 @@
         # ********************
         # Ban/Unban Functions
         # ********************
+
+        // بررسی تعداد تلاش برای ورود کاربران برای اجازه دسترسی
         
         public function unbanUser($userEmail) {
             $sql = 'UPDATE user SET login_attempts = 0 WHERE email = :email';

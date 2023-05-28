@@ -2,17 +2,18 @@
     $categories = Session::get('categories');
     $activeCategory = Session::get('activeCategory');
     // $activeCategoryName = isset($categories[$activeCategory]);
+
+    // بخش هدر سایت
 ?>
 <!-- Following Menu -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="<?php echo URL; ?>"><?php echo SITENAME; ?></a>
+        <a class="navbar-brand my-1" href="<?php echo URL; ?>"><?php echo SITENAME; ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div class="collapse navbar-collapse text-center" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item ">
                 <a class="nav-link <?= (Session::get('controller_name') == 'Home') ? 'active' : '' ?>" href="<?= URL ?>home">Home</a>

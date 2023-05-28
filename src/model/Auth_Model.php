@@ -61,7 +61,7 @@ class Auth_Model extends Model {
 
         return $result;
     }
-
+    //ثبت تعداد تلاش ها برای ورود نسبت به یوزر
     public function recordLoginAttempt($email) {
         # +1 login attempts on every false password input
         $sql = 'UPDATE user SET login_attempts = login_attempts + 1 WHERE email = :email ';
