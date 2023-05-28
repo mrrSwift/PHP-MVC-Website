@@ -1,12 +1,13 @@
 <?php
 
 class Session {
-    //بررسی سطح دسترسی کاربر
-
+    
+// شروع سشن
     static public function start() {
         session_start();
     }
 
+//بررسی سطح دسترسی کاربر
     static public function set($key, $value) {
         $_SESSION[$key] = $value;
     }
